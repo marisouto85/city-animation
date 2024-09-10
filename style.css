@@ -1,0 +1,152 @@
+.town {
+  background-size: auto;
+  width: 1750px;
+  height: 900px;
+  border: 20px solid rgb(116, 194, 219);
+}
+
+.sun {
+  position: relative;
+  height: 120px;
+  top: -980px;
+  left: 1000px;
+  animation-name: sunny;
+  animation-duration: 15s;
+}
+
+.cloud1,
+.cloud2 {
+  height: 5rem;
+  position: relative;
+  top: -1000px;
+  right: -500px;
+  animation-name: cloudy;
+  animation-duration: 10s;
+}
+
+.balloon1 {
+  position: relative;
+  height: 8rem;
+  top: -1000px;
+  animation-name: ballon;
+  animation-duration: 15s;
+}
+.balloon2 {
+  position: relative;
+  height: 8rem;
+  top: -1000px;
+  animation-name: ballonred;
+  animation-duration: 13s;
+}
+
+.redcar {
+  position: relative;
+  height: 15rem;
+  top: -200px;
+  left: -800px;
+  animation-name: myredcar;
+  animation-duration: 15s;
+}
+
+.bluecar {
+  position: relative;
+  height: 15rem;
+  top: -200px;
+  left: 500px;
+  animation-name: mybluecar;
+  animation-duration: 15s;
+}
+
+.dog {
+
+    position:relative;
+    height: 95px;
+    top: -250px;
+    right: 150px;
+
+}
+
+
+.town:hover .sun {
+  animation-play-state:running;
+}
+
+
+/*animation*/
+
+
+
+
+@keyframes sunny {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cloudy {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes ballon {
+
+    from {
+        left:-10%;
+        transform: translateX(-10);
+    }
+
+    to {
+        left: 100%;
+        transform: translateX(100);
+    }
+}
+
+@keyframes ballonred {
+
+    from {
+        left: 100%;
+        transform: translateX(100);
+    }
+
+    to {
+        left: -10%;
+        transform: translateX(-10);
+    }
+}
+
+@keyframes myredcar {
+    from {
+        left: -55%;
+        transform: translateX(20);
+    }
+
+    to {
+        left: 15%;
+        transform: translateX(100);
+    }
+
+
+}
+
+@keyframes mybluecar {
+
+    from {
+        left: 50%;
+        transform: translateX(20);
+    }
+
+    to {
+        left: 15%;
+        transform: translateX(100);
+    }
+}
